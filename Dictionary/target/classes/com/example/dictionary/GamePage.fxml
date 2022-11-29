@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.dictionary.GamePageController"
+            prefHeight="400.0" prefWidth="600.0">
+    <Text fill="black" layoutX="150.0" layoutY="60.0" text="DICTIONARY">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text fill="navy" layoutX="180.0" layoutY="140.0" text="Search for a Word">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Text>
+    <TextField fx:id="searchword" layoutX="60" layoutY="170" minWidth="240" minHeight="30" promptText="Enter a Word"></TextField>
+    <ImageView fitHeight="30" fitWidth="100" layoutY="170" layoutX="350" onMouseClicked="#search">
+        <image>
+            <Image url="C:\Users\User\IdeaProjects\Dictionary\src\main\resources\search.png"/>
+        </image>
+    </ImageView>
+
+    <Text fill="navy" layoutX="180.0" layoutY="290.0" text="Enter a new Word">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Text>
+    <TextField fx:id="word" layoutX="60" layoutY="320" minWidth="180" minHeight="30" promptText="Enter a Word"></TextField>
+    <TextField fx:id="meaning" layoutX="270" layoutY="320" minWidth="180" minHeight="30" promptText="Enter the meaning"></TextField>
+    <ImageView fitHeight="30" fitWidth="100" layoutY="370" layoutX="210" onMouseClicked="#newword">
+        <image>
+            <Image url="C:\Users\User\IdeaProjects\Dictionary\src\main\resources\button_add-word.png"/>
+        </image>
+    </ImageView>
+
+</AnchorPane>
